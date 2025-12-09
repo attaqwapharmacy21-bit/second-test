@@ -4,11 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('tree.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .login{
+            background: #00B7B5;
+            opacity: 0.7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            width: 35%;
+            height: max-content;
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+        }
+        .m4{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: medium;
+            margin-bottom: 15px;
+        }
+        #Signup{
+            color: #236a24;
+            cursor: pointer;
+        }
+        #Button{
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: aqua;
+            color: black;
+            font-weight: 700;
+            font-size: large;
+            cursor: pointer;
+        }
+        h2{
+            color: rgb(255, 195, 84);
+            font-weight: 800;
+            text-align: center;
+            font-size: xx-large;
+        }
+        .user-label{
+            text-align: left;
+        }
+        input[type="text"]{
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: rgb(0,0, 0,0.63);
+            box-shadow: 0 0 15px rgb(225,225, 225,0.2);
+            color: white;
+        }
+        input[type='text']:focus{
+                background-color: #7edae434;
+
+            }
+
+        input[type="text"]::placeholder{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input[type='Button']:hover{
+                background-color:#00a5dcc5 ;
+                transform: scale(1.06);
+        }
+        input[type='Button']{
+                width: 100%;
+                border: none;
+                padding: 8px 10px;
+                border-radius: 10px;
+                cursor: pointer;
+        }
+         input[type="password"]{
+             margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: rgb(0,0, 0,0.63);
+            box-shadow: 0 0 15px rgb(225,225, 225,0.2);
+            color: white;
+         }
+         input[type='password']:focus{
+                background-color: #7edae434;
+
+            }
+            p{
+                text-align: center;
+            }
+    </style>
 </head>
 <body>
-    hi this is Ruhan
+    <div class="login">
+        <h2>Sign In</h2>
+        <label class="user-label" for="">Enter your Username</label>
+        <input type="text" placeholder="Username">
+        <label for="">Enter Your Password</label>
+        <input type="password" placeholder="Password">
 
+        <div class="M4">
+            <p id="Forgot_password">Forgot Password</p>
+            <p id="Signup">Signup</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quia suscipit. Excepturi deleniti similique consequuntur eius. Expedita, non culpa! Veritatis eius illo consectetur fugit magnam assumenda, dignissimos sed optio modi minima deserunt velit doloribus enim, officiis odio voluptatum tempore facere necessitatibus, consequuntur nulla aperiam. Dolore harum ipsam dignissimos, pariatur soluta veniam illum facere laborum beatae odio voluptates maiores tempore nulla aspernatur maxime reprehenderit architecto enim ex voluptatum exercitationem suscipit. Numquam corporis tenetur itaque laborum deserunt? Amet ea excepturi esse, autem, labore doloremque voluptatem enim quos similique nam nostrum aliquam nobis, sunt debitis consequuntur rem incidunt ipsam quas rerum modi delectus blanditiis omnis vero vel. Nesciunt, impedit explicabo quibusdam sequi odio debitis repellat, unde ipsam laborum quidem repellendus cumque deleniti maiores quod accusantium doloremque corrupti! Consectetur unde, fuga minima cupiditate nisi repudiandae vitae pariatur quae atque distinctio nihil. Aspernatur voluptate tempora blanditiis nobis sapiente perspiciatis officiis labore quia, inventore pariatur distinctio maxime quae, possimus animi! Natus iste minima vero doloribus quaerat quibusdam quod. Incidunt maiores consectetur illo quos ipsum. Dolores eius cum quasi eum distinctio pariatur autem. Distinctio cum doloribus labore, animi eius, nostrum nisi in neque consequatur tempore dolore est aliquam enim porro dolorem ullam possimus non fuga? Illo aliquid odit cumque non laborum? Obcaecati, placeat. Maxime magni voluptatum iure deleniti modi eum maiores dignissimos aperiam similique consectetur quisquam at expedita exercitationem ea praesentium assumenda officia ullam, obcaecati minus consequatur id. Dicta quod voluptatem dolores porro mollitia distinctio labore reiciendis nostrum debitis fuga doloribus, alias itaque quam eligendi minima praesentium rem quia nihil aspernatur non obcaecati maxime, veniam enim. Quas rem excepturi assumenda earum repellendus dignissimos quaerat similique, beatae porro vero totam nemo ea deserunt magni ex perspiciatis facilis atque ratione nulla rerum illum quisquam! Quae tempore minima totam veritatis odio quis soluta provident, sunt porro voluptas facere fugiat atque.</p>
+        </div>
+
+        <div>
+            <input id="button" type="button" name="submit" value="login" id="">
+        </div>
+
+    </div>
+
+   
 </body>
 </html>
