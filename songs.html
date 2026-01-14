@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .header{
+            text-align: center;
+            background-image: url(13.jpg);
+            background-color: antiquewhite;
+            margin: 5px auto;
+            min-height: 48vh;
+            width: 97%;
+            border-radius: 10px;
+            color: rgb(97, 209, 97);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: "Dancing Script", cursive;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+        .header h1{
+            font-size: clamp(1.6rem, 5vw, 3.2rem);
+            color: inherit;
+            margin-bottom: 0.4rem;
+        }
+        .header h2{
+            color: aqua;
+            text-shadow: 6px 6px 9px rgb(41, 98, 184);
+            font-size: clamp(1rem, 3.2vw, 1.6rem);
+            margin-top: 0.2rem;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            background-color: whitesmoke;
+            padding: 20px;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.12);
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .card img{
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .card h2{
+            margin: 15px 0px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.25rem;
+            color: #333;
+            text-align: center;
+        }
+        .card p{
+            padding: 0px 15px ;
+            font-size: 1rem;
+            color: #555;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .card a{
+            display: inline-block;
+            text-decoration: none;
+            background-color: #4cAF50;
+            color: #fff;
+            cursor: pointer;
+            padding: 10px 20px;
+            width: 95%;
+            border-radius: 5px;
+            align-self: center;
+            margin-top: auto;
+            text-align: center;
+        }
+        .card a:hover{
+            background-color: greenyellow;
+        }
+
+        /* Tablet: 2 columns */
+        @media (min-width: 600px){
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+                padding: 24px;
+            }
+        }
+
+        /* Desktop / large screens: 3 columns */
+        @media (min-width: 992px){
+            .container{
+                grid-template-columns: repeat(3, 1fr);
+                padding: 28px 40px;
+            }
+            .header{
+                min-height: 60vh;
+            }
+        }
+
+        /* Small screens adjustments: avoid fixed background and reduce header height */
+        @media (max-width: 599px){
+            .header{
+                background-attachment: scroll;
+                min-height: 40vh;
+                padding: 1.5rem 0.5rem;
+            }
+            .container{
+                padding: 16px;
+                gap: 16px;
+            }
+            .card h2{ font-size: 1.1rem; }
+            .card p{ font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+   <div class="header">
+  <h1>Smart Songs Shop</h1>
+  <h2>Welcome to our website </span></h2>
+</div>
+   <div class="container">
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+        <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+    <div class="card">
+        <img src="" alt="">
+        <h2></h2>
+         <a href="#">Buy Now</a>
+    </div>
+   </div>
+</body>
+</html>
