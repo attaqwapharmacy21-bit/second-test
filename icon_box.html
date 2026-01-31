@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 4 Column Icon box</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Momo+Signature&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
@@ -16,34 +19,34 @@
         body {
 
             padding: 20px;
-            background: #59e6ff;
+            /* background: #69dbf2; */
+            background:rgb(172, 252, 252);
         }
 
         h1 {
 
             text-align: center;
             margin: 20px 0px;
-            cursor: pointer;
             font-weight: bold;
             font-size: 40px;
+            font-family: Momo Signature;
+             transition: transform 4s ease-in-out, color 4s ease;
         }
         h1:hover{
-            transition: background 0.5s ease, transform 0.2s ease;
-            /* transform: scale(1.10); */
-            transition: 2s ease;
-            color: #0046FF;
+            transform: scale(1.17);
+            color: rgb(33, 52, 255);
+            cursor: pointer;
 
         }
-
 
         .card {
 
             background-color: aliceblue;
-            /* border:1px solid #ddd; */
             padding: 30px;
             text-align: center;
             border-radius: 10px;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+           
 
         }
 
@@ -75,18 +78,20 @@
             border-radius: 50px;
             width: 120px;
             height: 50px;
-            background: rgb(235, 22, 22);
-            color: #ffffff;
+            background: rgb(255, 17, 17);
+            color: #fff;
             font-size: 16px;
             cursor: pointer;
             border: none;
-            transition: background 0.3s ease, transform 0.2s ease;
+             box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+            transition: background 0.3s ease,transform 0.15s ease, box-shadow 0.15s ease;
         }
 
         .btn:hover {
-            background: #27e28b;
+            background: rgb(53, 255, 121);
             transform: scale(1.1);
-            border: 2px solid rgb(68, 16, 255);
+            border: 3px solid rgb(68, 16, 255);
+            color: rgb(239, 120, 40);
         }
 
         .button-container {
@@ -98,15 +103,15 @@
         }
 
         .grid-container .card:hover {
-            border: 3px solid rgb(138, 94, 214);
+            border: 4px solid rgb(41, 183, 244);
             transition: background 0.3s ease, transform 0.2s ease;
             transform: scale(1.1);
         }
 
         p {
             text-align: justify;
-            font-weight: bolder;
-            line-height: 1.3;
+            font-weight: bold;
+            line-height: 1.2;
         }
 
 
